@@ -1,13 +1,16 @@
 import React from "react";
-
-import MemberSideBar from '../components/MemberSideBar'
+import MemberOrder from "../components/MemberOrder";
+import MemberSideBar from "../components/MemberSideBar";
 
 const MemberCenter = () => {
   return (
     <>
-      <MemberSideBar />
+      <div className="d-flex">
+        <MemberSideBar />
+        <MemberOrder style={{ backgroundColor: "#EABEAE" }} />
+      </div>
     </>
-  )
+  );
 };
 
-export default MemberCenter
+export default MemberCenter;

@@ -19,7 +19,7 @@ const NavBar = props => {
     <>
       <nav className="navbar page-nav d-flex">
         <div className="page-nav-aside d-flex align-items-center justify-content-center">
-          <GiHamburgerMenu className="mx-3 " style={{ fontSize: "25px" }} />
+          <GiHamburgerMenu className="mx-3 " style={{ fontSize: "30px" }} />
           <h3>BAKE TIME</h3>
         </div>
         {signIn ? <NavBarSign /> : <NavBarUnSign showLightBox={memberSignIn} />}
