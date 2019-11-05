@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "../common/memberOrderList.css";
