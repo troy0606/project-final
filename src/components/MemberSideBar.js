@@ -3,8 +3,8 @@ import '../common/member_sideBar.css'
 
 const MemberSideBar = () => {
     return (
-        <div className="container-fluid d-flex" style={{height:'100vh'}}>
-        <aside className="side-bar">
+        <div className="container-fluid d-flex">
+        <aside className="side-bar"  style={{minHeight:'1080px'}}>
             <div className="member-info">
                 <figure className="member-photo">
                     <img src="https://pixel.nymag.com/imgs/daily/vulture/2015/04/02/02-winnie-the-pooh.w330.h330.jpg"
