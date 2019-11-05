@@ -1,20 +1,20 @@
-import React, { Component } from "react";
+import React from "react";
 import "../common/member_sideBar.css";
 
 const MemberSideBar = () => {
   return (
-    <aside className="side-bar d-flex flex-column" style={{ height: "100%" }}>
-      <div className="member-info">
-        <figure className="member-photo">
-          <img
-            src="https://pixel.nymag.com/imgs/daily/vulture/2015/04/02/02-winnie-the-pooh.w330.h330.jpg"
-            className="object"
-            alt="..."
-          />
-        </figure>
-        <h5 className="member-title text-center">LIU HAN WEN</h5>
-      </div>
+    <aside className="side-bar d-flex flex-column">
       <div className="member-function d-flex flex-column align-items-center">
+        <div className="member-info">
+          <figure className="member-photo">
+            <img
+              src="https://pixel.nymag.com/imgs/daily/vulture/2015/04/02/02-winnie-the-pooh.w330.h330.jpg"
+              className="object"
+              alt="..."
+            />
+          </figure>
+        </div>
+        <h5 className="member-title text-center">LIU HAN WEN</h5>
         <div className="member-profile">
           <p>PROFILE</p>
           <h3>基本資料修改</h3>

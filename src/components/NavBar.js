@@ -4,7 +4,7 @@ import "../common/normalize.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import NavBarSign from "./NavBarSign";
 import NavBarUnSign from "./NavBarUnSign";
-
+import MemberLogin from "./MemberLogin";
 const NavBar = props => {
   const [signIn, setSignIn] = useState(false);
 
@@ -17,6 +17,7 @@ const NavBar = props => {
   }
   return (
     <>
+      <MemberLogin></MemberLogin>
       <nav className="navbar page-nav d-flex">
         <div className="page-nav-aside d-flex align-items-center justify-content-center">
           <GiHamburgerMenu className="mx-3 " style={{ fontSize: "30px" }} />
