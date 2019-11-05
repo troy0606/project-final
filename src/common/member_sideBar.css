@@ -1,79 +1,80 @@
 * {
-    font-family: '微軟正黑體';
+  font-family: "微軟正黑體";
+  padding: 0;
 }
 
 .container-fluid {
-    padding: 0px;
+  min-height: 100px;
+  padding: 0px;
 }
 
 .side-bar {
-    width: 374px;
-    height: 100vh;
-    background-color: #362D2B;
+  width: 374px;
+  height: 100vh;
+  background-color: #362d2b;
 }
 
 .member-info {
-    width: 100%;
-    height: 298px;
-    position: relative;
+  width: 100%;
+  height: 298px;
+  position: relative;
 }
 
 .member-photo {
-    margin: 0px;
-    border-radius: 50%;
-    border: 8px #F2A6AD solid;
-    box-sizing: border-box;
-    overflow: hidden;
-    position: absolute;
-    width: 148px;
-    height: 148px;
-    top: 64px;
-    left: 50%;
-    margin-left: -74px;
+  margin: 0px;
+  border-radius: 50%;
+  border: 8px #f2a6ad solid;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: absolute;
+  width: 148px;
+  height: 148px;
+  top: 64px;
+  left: 50%;
+  margin-left: -74px;
 }
 
 .object {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
-
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .member-title {
-    position: absolute;
-    bottom: 37px;
-    color: white;
-    left: 50%;
-    margin-left: -65px;
+  position: absolute;
+  bottom: 37px;
+  color: white;
+  left: 50%;
+  margin-left: -65px;
 }
 
 .member-info::after {
-    position: absolute;
-    content: " ";
-    width: 308px;
-    border-bottom: 1px #9597A6 solid;
-    bottom: 0px;
-    left: 50%;
-    margin-left: -154px;
+  position: absolute;
+  content: " ";
+  width: 308px;
+  border-bottom: 1px #9597a6 solid;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -154px;
 }
 
 .member-function {
-    color: white;
+  color: white;
 }
 
 .member-function p {
-    margin-top: 45px;
-    color: #9597A6;
-    margin-bottom: 5px;
-    font-size: 12px;
-    line-height: 29px;
+  margin-top: 45px;
+  color: #9597a6;
+  margin-bottom: 5px;
+  font-size: 12px;
+  line-height: 29px;
 }
 
 .member-function h3 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .text-center h3 {
-    font-size: 23px;
+  font-size: 23px;
 }
