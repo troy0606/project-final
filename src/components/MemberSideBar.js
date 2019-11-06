@@ -18,7 +18,11 @@ const MemberSideBar = ({ match }) => {
         <h5 className="member-title text-center">LIU HAN WEN</h5>
         <div className="member-profile">
           <p>PROFILE</p>
-          <h3>基本資料修改</h3>
+          <h3>
+            <Link to="/edit" replace="false">
+              基本資料修改
+            </Link>
+          </h3>
           <h3>重設密碼</h3>
         </div>
         <div className="member-like">
@@ -29,7 +33,11 @@ const MemberSideBar = ({ match }) => {
         <div className="member-order">
           <p>ACTIVITY FINISHING</p>
           <h3>優惠活動</h3>
-          <h3><Link to="/member/order" replace='false' >訂單紀錄</Link></h3>
+          <h3>
+            <Link to="/order" replace="false">
+              訂單紀錄
+            </Link>
+          </h3>
         </div>
         <div className="text-center mt-5">
           <h3>Home</h3>

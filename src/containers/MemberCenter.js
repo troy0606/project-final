@@ -1,8 +1,9 @@
 import React from "react";
 import MemberOrder from "../components/MemberOrder";
 import MemberSideBar from "../components/MemberSideBar";
+import MemberEdit from "../components/MemberEdit";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Row, Col ,Container} from "react-bootstrap"
+import { Row, Col, Container } from "react-bootstrap";
 const MemberCenter = ({ match }) => {
   return (
     <>
@@ -10,10 +11,10 @@ const MemberCenter = ({ match }) => {
         <Router>
           <MemberSideBar />
           <Switch>
-            <Route path={`/member/:order`} component={MemberOrder} />
+            <Route exact path={`/edit`} component={MemberEdit} />
+            <Route exact path={`/order`} component={MemberOrder} />
           </Switch>
         </Router>
-
       </div>
     </>
   );
