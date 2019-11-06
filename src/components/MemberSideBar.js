@@ -2,7 +2,7 @@ import React from "react";
 import "../common/member_sideBar.css";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
-const MemberSideBar = () => {
+const MemberSideBar = ({ match }) => {
   return (
     <aside className="side-bar">
       <div className="member-function d-flex flex-column align-items-center">
@@ -29,7 +29,7 @@ const MemberSideBar = () => {
         <div className="member-order">
           <p>ACTIVITY FINISHING</p>
           <h3>優惠活動</h3>
-          <h3><Link >訂單紀錄</Link></h3>
+          <h3><Link to="/member/order" replace='false' >訂單紀錄</Link></h3>
         </div>
         <div className="text-center mt-5">
           <h3>Home</h3>
