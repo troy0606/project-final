@@ -7,7 +7,7 @@ const MemberCenter = () => {
     <>
       <div className="d-flex">
         <MemberSideBar />
-        <MemberOrder style={{ backgroundColor: "#EABEAE" }} />
+        {/* <MemberOrder style={{ backgroundColor: "#EABEAE" }} /> */}
       </div>
     </>
   );
