@@ -24,6 +24,7 @@ class MemberLogin extends Component {
         password: ""
       }
     };
+    console.log("props" + this.props.memberSignIn)
   }
   render() {
     if (this.state.MemberLogin) {
@@ -32,6 +33,7 @@ class MemberLogin extends Component {
           <div className="login-wrap d-flex flex-column align-items-center">
             <div className="mt-4">
               <img
+                alt="FacebookIcon"
                 src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Pinkoi_logo.png"
                 style={{ maxWidth: "100px" }}
               />
@@ -103,7 +105,7 @@ class MemberLogin extends Component {
               <div className="text-center"></div>
             </form>
           </div>
-          <div className="login-backdrop"></div>
+          <div className="login-backdrop" onClick={this.props.memberSignIn}></div>
         </>
       );
     } else {

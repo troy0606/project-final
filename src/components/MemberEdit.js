@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { GiHamburgerMenu } from "react-icons/gi";
-import "../common/memberOrderList.css";
-const MemberOrderList = () => {
+const MemberEdit = () => {
   return (
     <div className="container-fluid">
       <div className="row">
@@ -17,4 +16,4 @@ const MemberOrderList = () => {
   );
 };
 
-export default MemberOrderList;
+export default MemberEdit;
