@@ -34,9 +34,7 @@ const MemberSideBar = ({ match }) => {
           <p>ACTIVITY FINISHING</p>
           <h3>優惠活動</h3>
           <h3>
-            <Link to="/order" replace="false">
-              訂單紀錄
-            </Link>
+            <Link to="/order">訂單紀錄</Link>
           </h3>
         </div>
         <div className="text-center mt-5">

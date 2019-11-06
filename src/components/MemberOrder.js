@@ -2,19 +2,22 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "../common/memberOrderList.css";
-const MemberOrderList = () => {
+import MemberOrderList from "./MemberOrderList";
+import MemberOrderDetail from "./MemberOrderDetail";
+
+const MemberOrder = () => {
   return (
     <div className="container-fluid">
       <div className="row">
-        <div className="col-4" style={{ background: "red" }}>
-          123456
+        <div className="col-4 p-0">
+          <MemberOrderList />
         </div>
-        <div className="col-8" style={{ background: "blue" }}>
-          123456222
+        <div className="col-8 p-0">
+          <MemberOrderDetail />
         </div>
       </div>
     </div>
   );
 };
 
-export default MemberOrderList;
+export default MemberOrder;
