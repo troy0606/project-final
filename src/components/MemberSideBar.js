@@ -3,7 +3,7 @@ import "../common/member_sideBar.css";
 
 const MemberSideBar = () => {
   return (
-    <aside className="side-bar d-flex flex-column">
+    <aside className="side-bar">
       <div className="member-function d-flex flex-column align-items-center">
         <div className="member-info">
           <figure className="member-photo">

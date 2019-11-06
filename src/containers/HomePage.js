@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <>
       <NavBars />
-      <div className="container-fluid homePage"></div>
+      <div className="container-fluid homePage "></div>
     </>
   );
 };

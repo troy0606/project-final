@@ -1,17 +1,13 @@
 * {
   font-family: "微軟正黑體";
   padding: 0;
-}
-
-.container-fluid {
-  min-height: 100px;
-  padding: 0px;
+  margin: 0;
 }
 
 .side-bar {
   width: 374px;
-  height: 100vh;
   background-color: #362d2b;
+  min-height: 937px;
 }
 
 .member-info {
@@ -48,6 +44,7 @@
 
 .member-function {
   color: white;
+  height: 100%;
 }
 
 .member-function p {
