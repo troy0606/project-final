@@ -11,8 +11,8 @@ const MemberCenter = ({ match }) => {
         <Router>
           <MemberSideBar />
           <Switch>
-            <Route exact path={`/edit`} component={MemberEdit} />
-            <Route exact path={`/order`} component={MemberOrder} />
+            <Route exact path={`/:edit`} component={MemberEdit} />
+            {/* <Route exact path={`/order`} component={MemberOrder} /> */}
           </Switch>
         </Router>
       </div>
