@@ -1,5 +1,9 @@
 .memberOrderList {
   position: relative;
+  overflow: scroll;
+  height: 937px;
+  overflow-x:hidden;
+  
 }
 
 .memberOrderList h3 {

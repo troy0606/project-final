@@ -1,5 +1,5 @@
 import React from "react";
-import MemberOrder from "../components/MemberOrder";
+import MemberOrder from "../components/member_order/MemberOrder";
 import MemberSideBar from "../components/MemberSideBar";
 import MemberEdit from "../components/MemberEdit";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -11,8 +11,8 @@ const MemberCenter = ({ match }) => {
         <Router>
           <MemberSideBar />
           <Switch>
+            <Route exact path={`/order`} component={MemberOrder} />
             <Route exact path={`/:edit`} component={MemberEdit} />
-            {/* <Route exact path={`/order`} component={MemberOrder} /> */}
           </Switch>
         </Router>
       </div>

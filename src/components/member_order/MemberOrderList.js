@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { GiHamburgerMenu } from "react-icons/gi";
-import "../common/memberOrderList.css";
+import "../../common/memberOrderList.css";
 import { FaDollarSign } from "react-icons/fa";
 import { FaRegClock } from "react-icons/fa";
 import { GoPerson } from "react-icons/go";
+import { useDispatch } from 'react-redux';
 
 // import Navbar from "react-bootstrap/Navbar";
 // import NavDropdown from "react-bootstrap/NavDropdown";
 // import Nav from "react-bootstrap/Nav";
 
-const MemberOrderList = () => {
+const MemberOrderList = ({ changeOrderType }) => {
   const orderList_title = {
     margin: "14px 0 17px",
     marginLeft: "25%",
@@ -25,6 +26,8 @@ const MemberOrderList = () => {
     color: "white",
     margin: "-4px 6px 0 5px"
   };
+  // const dispatch = useDispatch();
+
   return (
     <>
       <Container
@@ -39,7 +42,7 @@ const MemberOrderList = () => {
           <h3 className="ml-5 mt-5 mb-5">訂單紀錄</h3>
         </div>
         <div className="memberOrderList-info pl-2">
-          <ul style={orderTitle_border}>
+          <ul style={orderTitle_border}  onClick={()=>changeOrderType(1)}>
             <h3 style={orderList_title}>
               課程
               <span>
@@ -56,10 +59,56 @@ const MemberOrderList = () => {
                   </h5>
                 </div>
                 <div className="d-flex flex-lg-wrap">
-                  <h5 className=" mr-3">
-                    <GoPerson style={oderList_icons} />
-                    人數: 5
+                  <h5>
+                    <FaDollarSign style={oderList_icons} />
+                    價格: 2000
                   </h5>
+                </div>
+              </div>
+              <div>
+                <figure>
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRBVl9lhK94mJ5MxzGptFKO5FLRXoXVNDmjYndWy1H4kCaqDqOw"
+                    alt=""
+                  />
+                </figure>
+              </div>
+            </li>
+            <li className="d-flex justify-content-between align-item-center my-4">
+              <div>
+                <h5 style={{ fontSize: "20px" }}>Saturday February 20th</h5>
+                <div>
+                  <h5>
+                    <FaRegClock style={oderList_icons} />
+                    商品名稱: 白巧克小姐
+                  </h5>
+                </div>
+                <div className="d-flex flex-lg-wrap">
+                  <h5>
+                    <FaDollarSign style={oderList_icons} />
+                    價格: 2000
+                  </h5>
+                </div>
+              </div>
+              <div>
+                <figure>
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRBVl9lhK94mJ5MxzGptFKO5FLRXoXVNDmjYndWy1H4kCaqDqOw"
+                    alt=""
+                  />
+                </figure>
+              </div>
+            </li>
+            <li className="d-flex justify-content-between align-item-center my-4">
+              <div>
+                <h5 style={{ fontSize: "20px" }}>Saturday February 20th</h5>
+                <div>
+                  <h5>
+                    <FaRegClock style={oderList_icons} />
+                    商品名稱: 白巧克小姐
+                  </h5>
+                </div>
+                <div className="d-flex flex-lg-wrap">
                   <h5>
                     <FaDollarSign style={oderList_icons} />
                     價格: 2000
@@ -76,7 +125,7 @@ const MemberOrderList = () => {
               </div>
             </li>
           </ul>
-          <ul style={orderTitle_border}>
+          <ul style={orderTitle_border} onClick={()=>changeOrderType(2)}>
             <h3 style={orderList_title}>
               食材
               <span>
@@ -113,7 +162,7 @@ const MemberOrderList = () => {
             </li>
           </ul>
           <ul style={orderTitle_border}>
-            <h3 style={orderList_title}>
+            <h3 style={orderList_title} onClick={()=>changeOrderType(3)}>
               老師
               <span>
                 <h5 style={{ fontSize: "16px" }}>訂單編號: 100002</h5>
@@ -129,10 +178,6 @@ const MemberOrderList = () => {
                   </h5>
                 </div>
                 <div className="d-flex flex-lg-wrap">
-                  <h5 className=" mr-3">
-                    <GoPerson style={oderList_icons} />
-                    人數: 5
-                  </h5>
                   <h5>
                     <FaDollarSign style={oderList_icons} />
                     價格: 2000
